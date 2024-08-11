@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: apps
+    path: argocd/apps
     repoURL: https://github.com/arodindev/gitops-boilerplates.git
   syncPolicy:
     automated:
