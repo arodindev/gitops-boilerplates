@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: todoapp
+  namespace: argocd
+spec:
+  destination:
+    namespace: todoapp
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: kubernetes/todoapp
+    repoURL: https://github.com/arodindev/devops-boilerplates
