@@ -25,4 +25,5 @@ kubectl apply -k .
 ## Access ArgoCD Dashboard
 
 Username: `admin`
+
 Password: `kubectl get secrets -n argocd argocd-initial-admin-secret -o yaml`
