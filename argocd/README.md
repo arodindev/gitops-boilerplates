@@ -1,6 +1,8 @@
 # ArgoCD Sample
 
-Deploys (todoapp)[https://github.com/arodindev/todoapp] and ArgoCD (for self sync): https://github.com/arodindev/devops-boilerplates/tree/main/kubernetes
+Deploys [todoapp](https://github.com/arodindev/todoapp) and ArgoCD (for self sync).
+
+Repo: https://github.com/arodindev/devops-boilerplates/tree/main/kubernetes
 
 ## Install ArgoCD on Cluster
 
@@ -13,3 +15,14 @@ kubectl apply -k https://github.com/arodindev/devops-boilerplates/kubernetes/arg
 ```bash
 istioctl install
 ```
+
+## Apply `root` App
+
+```bash
+kubectl apply -k .
+```
+
+## Access ArgoCD Dashboard
+
+Username: `admin`
+Password: `kubectl get secrets -n argocd argocd-initial-admin-secret -o yaml`
