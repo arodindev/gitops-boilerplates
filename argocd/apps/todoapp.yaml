@@ -11,3 +11,5 @@ spec:
   source:
     path: kubernetes/todoapp
     repoURL: https://github.com/arodindev/devops-boilerplates
+  syncPolicy:
+    automated: {}
